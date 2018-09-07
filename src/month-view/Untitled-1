@@ -1,0 +1,61 @@
+{26: {…}, 27: {…}, 28: {…}, 29: {…}, 30: {…}, 31: {…}}
+26 :
+{date: 26, month: "previous"}
+27
+:
+{date: 27, month: "previous"}
+28
+:
+{date: 28, month: "previous"}
+29
+:
+{date: 29, month: "previous"}
+30
+:
+{date: 30, month: "previous"}
+31
+:
+{date: 31, month: "previous"}
+__proto__
+:
+Object
+
+
+
+
+        // var lastMonthNodesObj = nodesOfLastMonth.reduce(function(result, item , index, array){
+        //     console.log(result, item ,index, array );
+        //     result[item] = { date : item, month: 'previous'  }; 
+        //     return result;
+            
+        // },{});
+
+        // var currentMonthNodesObj = [...Array.from({length: daysInMonth},(v,k)=> k+1)].reduce(function(result, item , index, array){
+        //     console.log(result, item ,index, array );
+        //     result[item] = { date : item, month: 'current' }; 
+        //     return result;
+            
+        // },{});
+
+        // var nodesOfNextMonth = nodesOfLastMonth.reduce(function(result, item , index, array){
+        //     console.log(result, item ,index, array );
+        //     result[item] = { date : item, month: 'next'  }; 
+        //     return result;
+            
+        // },{});
+
+        // var nodesForMonthView = {...lastMonthNodesObj,...currentMonthNodesObj};
+
+        // console.log(nodesForMonthView);
+
+
+
+        labelNodes:
+
+        const lastMonthNodesObj = nodes.reduce(function(result, item , index, array){
+        console.log(result, item ,index, array );
+        result[item] = { date : item, month: 'previous'  }; 
+        return result;
+        
+    },{});
+        
